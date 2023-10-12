@@ -7,11 +7,12 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Main from './components/Layout/Main.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App></App>
+    element: <Main></Main>
   }
 ])
 

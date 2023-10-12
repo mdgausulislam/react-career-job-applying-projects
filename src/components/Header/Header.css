@@ -1,0 +1,25 @@
+nav {
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 3px 1px 0 rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+}
+
+.menubar a {
+    margin-right: 20px;
+    font-size: 22px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.btn-start-applying {
+    padding: 19px 28px;
+    border-radius: 8px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+    border: none;
+}
