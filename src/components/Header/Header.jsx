@@ -8,7 +8,7 @@ const Header = () => {
             <div className='menubar'>
                 <a href="/">Home</a>
                 <a href="/about">About</a>
-                <a href="/applied">APlied Job</a>
+                <a href="/applied">APPlied Job</a>
                 <a href="/login">Login</a>
             </div>
             <button className='btn-start-applying'>Start Applying</button>

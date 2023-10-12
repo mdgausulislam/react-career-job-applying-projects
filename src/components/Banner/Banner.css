@@ -1,0 +1,41 @@
+.banner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+
+.banner-title {
+    color: var(--Dark-01, #1A1919);
+    font-size: 80px;
+    font-weight: 800;
+    width: 570px;
+}
+
+.dream-job {
+    background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 80px;
+    font-weight: 800;
+    line-height: 100px;
+}
+
+.banner-description {
+    color: var(--Dark-03, #757575);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    width: 519px;
+}
+
+.btn-get-start {
+    padding: 19px 28px;
+    border-radius: 8px;
+    background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+}
