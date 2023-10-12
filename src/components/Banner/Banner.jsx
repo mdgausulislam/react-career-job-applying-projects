@@ -10,7 +10,7 @@ const Banner = () => {
                 <p className='banner-description'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p> 
                 <button className='btn-get-start'>Get Started</button>
             </div>
-            <img src={image} alt="" />
+            <img className='banner-image' src={image} alt="" />
         </div>
     );
 };
