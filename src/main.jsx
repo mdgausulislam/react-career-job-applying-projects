@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css';
 
 import {
@@ -13,7 +12,6 @@ import AppliedJob from './components/AppliedJob/AppliedJob.jsx';
 import Login from './components/Login/Login.jsx';
 import Home from './components/Home/Home.jsx';
 import jobDataLoader from './Loader/JobLoader.js';
-import Feature from './components/Feature/Feature.jsx';
 import JobDetails from './components/JobDetails/JobDetails.jsx';
 
 const router = createBrowserRouter([
@@ -26,8 +24,9 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path: '/feature:id',
-        element: <JobDetails></JobDetails>
+        path: '/feature/:id',
+        element: <JobDetails></JobDetails>,
+        loader: ()=>fetch('/public/jobs.json')
       },
       {
         path: '/about',
