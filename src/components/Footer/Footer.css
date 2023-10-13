@@ -1,0 +1,79 @@
+footer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: var(--Dark-01, #1A1919);
+    gap: 100px;
+
+}
+
+.contact-info {
+    display: flex;
+    width: 75px;
+    height: 75px;
+}
+
+.footer {
+    padding: 80px;
+}
+
+
+.footer a {
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.service,
+.company,
+.contact,
+.legal,
+.applied-job-footer-title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.applied-job-footer-description {
+    width: 300px;
+    color: rgba(255, 255, 255, 0.70);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.facebook {
+    color: #4267B2;
+    font-size: 20px;           /* Set the icon color to green */
+    background-color: white; /* Set the background color to white */
+    padding: 15px;            /* Add padding around the icon */
+    border-radius: 100%;     /* Make the background a circle (optional) */
+    
+  }
+
+  .twitter{
+    margin-left: 20px;
+    color: #4267B2;
+    font-size: 20px;           
+    background-color: white;
+    padding: 15px;            
+    border-radius: 100%;
+  }
+  .instagram {
+    margin-left: 20px;
+    color: #f58529;
+    background-color: white;
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 100%;
+    display: inline-block;
+  }
+ 
