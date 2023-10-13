@@ -1,11 +1,16 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+import { useLoaderData, useParams } from 'react-router-dom';
 
 const JobDetails = () => {
-    const jobDetails=useLoaderData()
+    const jobs = useLoaderData();
+    const {id} = useParams();
+    const idInt = parseInt(id);
+    const job = jobs.find(job => job.id === idInt);
+    console.log(job); 
     return (
         <div>
-            <h1>Hemonto job details:{jobDetails.length}</h1> 
+            
+           
         </div>
     );
 };
