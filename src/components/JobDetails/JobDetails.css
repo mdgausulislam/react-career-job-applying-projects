@@ -1,4 +1,4 @@
-.job-all-details{
+.job-all-details {
     margin: 50px;
 }
 
@@ -11,17 +11,58 @@
     grid-template-columns: 3fr 1fr;
 }
 
-.job-description-title {
+.job-description-title,
+.job-responsibility-title {
     color: var(--Dark-01, #1A1919);
     font-size: 16px;
     font-weight: 800;
     line-height: 32px;
 }
 
-.job-description {
+.job-description,
+.job-responsibility {
     width: 720px;
     color: var(--Dark-03, #757575);
     font-size: 16px;
     font-weight: 500;
     line-height: 32px;
+}
+
+.job-details-container {
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgba(126, 144, 254, 0.10) 0%, rgba(152, 115, 255, 0.10) 100%);
+    padding: 30px;
+}
+
+.job-details-info {
+    color: var(--Dark-01, #1A1919);
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.btn-apply-now {
+    width: 100%;
+    padding: 19px 0;
+    border-radius: 8px;
+    background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    border: none;
+}
+
+.salary,
+.job-title,
+.phone,
+.email,
+.address {
+    color: var(--Dark-02, #474747);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.salary-info {
+    color: var(--Dark-03, #757575);
+    font-size: 20px;
+    font-weight: 500;
 }

@@ -16,11 +16,29 @@ const JobDetails = () => {
                 <div className='job-type-description-container'>
                     <p className='job-description'><span className='job-description-title'>Job Description:</span>{job.job_description}</p>
 
+                    <p className='job-responsibility'><span className='job-responsibility-title'>Job Description:</span>{job.job_responsibility}</p>
+
+                    <div>
+                        <h5>Educational Requirements:</h5>
+                        <p>{job.educational_requirements}</p>
+                    </div>
+                    <div>
+                        <h5>Experiences:</h5>
+                        <p>{job.experiences}</p>
+                    </div>
+
                 </div>
                 <div className='job-details-container'>
-                    <h1>oder details</h1>
+                    <h4 className='job-details-info'>Job Details</h4>
+                    <hr></hr>
+                    <p className='salary-info'><span className='salary'>Salary:</span> {job.salary}</p>
+                    <p className='salary-info'><span className='job-title'>Job Title:</span> {job.job_title}</p>
+                    <hr />
+                    <p className='salary-info'><span className='phone'>Phone:</span> {job.contact_information.phone}</p>
+                    <p className='salary-info'><span className='email'>Email:</span> {job.contact_information.email}</p>
+                    <p className='salary-info'><span className='address'>Address:</span> {job.contact_information.address}</p>
+                    <button className='btn-apply-now'>Apply Now</button>
                 </div>
-
             </div>
         </div>
     );
