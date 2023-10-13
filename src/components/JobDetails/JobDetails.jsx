@@ -1,6 +1,9 @@
 import React from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
-import './JobDetails.css'
+import './JobDetails.css';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { saveJobApplication } from '../../utility/localstorage';
 
 const JobDetails = () => {
     const jobs = useLoaderData();
@@ -8,6 +11,11 @@ const JobDetails = () => {
     const idInt = parseInt(id);
     const job = jobs.find(job => job.id === idInt);
     console.log(job);
+
+    const handleApplyJob=()=>{
+        saveJobApplication(idInt);
+        toast('you have applied successfully')
+    }
     return (
         <div className='job-all-details'>
             <h1 className='job-type'>Job Details</h1>
@@ -37,9 +45,10 @@ const JobDetails = () => {
                     <p className='salary-info'><span className='phone'>Phone:</span> {job.contact_information.phone}</p>
                     <p className='salary-info'><span className='email'>Email:</span> {job.contact_information.email}</p>
                     <p className='salary-info'><span className='address'>Address:</span> {job.contact_information.address}</p>
-                    <button className='btn-apply-now'>Apply Now</button>
+                    <button onClick={handleApplyJob} className='btn-apply-now'>Apply Now</button>
                 </div>
             </div>
+            <ToastContainer/>
         </div>
     );
 };
