@@ -14,6 +14,7 @@ import Login from './components/Login/Login.jsx';
 import Home from './components/Home/Home.jsx';
 import jobDataLoader from './Loader/JobLoader.js';
 import Feature from './components/Feature/Feature.jsx';
+import JobDetails from './components/JobDetails/JobDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/feature:id',
-        element: <Feature></Feature>
+        element: <JobDetails></JobDetails>
       },
       {
         path: '/about',
