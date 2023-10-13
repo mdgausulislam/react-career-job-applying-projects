@@ -1,0 +1,42 @@
+.feature-container {
+    border: 2px solid red;
+    width: 500px;
+    height: 280px;
+    border-radius: 8px;
+    padding: 40px 40px;
+    position: relative;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.btn-remote {
+    background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 9px 19px;
+    border-radius: 4px;
+    border: 1px solid var(--Linear, #7E90FE);
+}
+
+.btn-remote-type button {
+    margin-right: 20px;
+}
+
+.btn-view-details {
+    border-radius: 4px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 800;
+    padding: 11px 19px;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    
+}
