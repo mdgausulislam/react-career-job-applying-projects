@@ -1,0 +1,27 @@
+.job-all-details{
+    margin: 50px;
+}
+
+.job-type {
+    text-align: center;
+}
+
+.job-type-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.job-description-title {
+    color: var(--Dark-01, #1A1919);
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 32px;
+}
+
+.job-description {
+    width: 720px;
+    color: var(--Dark-03, #757575);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+}
