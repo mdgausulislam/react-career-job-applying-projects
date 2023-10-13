@@ -11,6 +11,9 @@
     display: flex;
     align-items: center;
 }
+.location p{
+    margin-right: 25px;
+}
 
 .btn-remote {
     background: var(--Linear, linear-gradient(90deg, #7E90FE 0%, #9873FF 100%));
@@ -38,5 +41,25 @@
     border: none;
     position: absolute;
     bottom: 10px;
-    
+}
+
+.location-icon {
+    width: 24px;
+    height: 24px;
+    color: white;
+    fill: currentColor; 
+    background: transparent;
+    stroke: black;
+}
+
+.salary-icon {
+    width: 24px;
+    height: 24px;
+    fill: white; 
+    background: transparent;
+    stroke: black;
+}
+.location-size{
+    margin-right: 10px;
+
 }

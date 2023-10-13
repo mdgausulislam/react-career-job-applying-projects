@@ -12,6 +12,7 @@ import About from './components/About/About.jsx';
 import AppliedJob from './components/AppliedJob/AppliedJob.jsx';
 import Login from './components/Login/Login.jsx';
 import Home from './components/Home/Home.jsx';
+import jobDataLoader from './Loader/JobLoader.js';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/applied',
-        element:<AppliedJob></AppliedJob>
+        element:<AppliedJob></AppliedJob>,
+        loader:jobDataLoader
       },
       {
         path:'/login',
