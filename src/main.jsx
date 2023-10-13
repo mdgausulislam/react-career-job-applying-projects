@@ -13,28 +13,33 @@ import AppliedJob from './components/AppliedJob/AppliedJob.jsx';
 import Login from './components/Login/Login.jsx';
 import Home from './components/Home/Home.jsx';
 import jobDataLoader from './Loader/JobLoader.js';
+import Feature from './components/Feature/Feature.jsx';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <Main></Main>,
-    children:[
+    children: [
       {
-        path:"/",
-        element:<Home></Home>
+        path: "/",
+        element: <Home></Home>
       },
       {
-        path:'/about',
-        element:<About></About>
+        path: '/feature:id',
+        element: <Feature></Feature>
       },
       {
-        path:'/applied',
-        element:<AppliedJob></AppliedJob>,
-        loader:jobDataLoader
+        path: '/about',
+        element: <About></About>
       },
       {
-        path:'/login',
-        element:<Login></Login>
+        path: '/applied',
+        element: <AppliedJob></AppliedJob>,
+        loader: jobDataLoader
+      },
+      {
+        path: '/login',
+        element: <Login></Login>
       }
     ]
   }
